@@ -11,7 +11,7 @@ public class Palindrome {
 		for(int i = 0; i< arr.length; i++) {
 			StringBuffer sb = new StringBuffer(arr[i]);
 			if(sb.toString().equals(sb.reverse().toString())) {
-				System.out.println(sb+ " ");
+				System.out.println(sb+" ");
 			}
 		}
 	

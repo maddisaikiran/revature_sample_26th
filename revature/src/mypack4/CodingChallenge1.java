@@ -15,8 +15,10 @@ public class CodingChallenge1 {
 		//String str = "abab";
 		int l = str.length();
 		String s = str.substring(l-1)+str;	
+		
 		StringBuffer sb = new StringBuffer(s);
 		sb.reverse();
+	
 		if(s.equals(sb.toString())) {
 			result= s.substring(0,1);
 			return result;

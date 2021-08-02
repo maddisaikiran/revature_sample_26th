@@ -10,8 +10,8 @@ public class RemDup {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		String arr[] = s.split(" ");
-		String a[] = new String[arr.length];
 		Arrays.sort(arr);
+		String a[] = new String[arr.length];
 		for(int i = 0; i<arr.length-1;i++) {
 			if(arr[i].equals(arr[i+1])) {
 				continue;
