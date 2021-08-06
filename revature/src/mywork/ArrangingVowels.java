@@ -12,9 +12,8 @@ public class ArrangingVowels {
 	public static String Vowels(String s) {
 		Map<Integer, String> map = new TreeMap<>(Collections.reverseOrder());
 		String[] str = s.split(" ");
-		int count = 0;
 		for (int i = 0; i < str.length; i++) {
-			count = 0;
+			int count = 0;
 			for (int j = 0; j < str[i].length(); j++) {
 				if(str[i].charAt(j)=='a' || str[i].charAt(j)=='e' || str[i].charAt(j)=='i'|| str[i].charAt(j)=='o' || str[i].charAt(j)=='e') {
 					count++;
@@ -34,7 +33,7 @@ public class ArrangingVowels {
 		StringBuilder sb = new StringBuilder();
 		for(String e: map.values()) {
 			sb.append(e).append(" ");
-		}
+		} 
 		
 		return sb.toString();
 	}
